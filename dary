@@ -1,0 +1,8 @@
+if (!(Test-Path "C:\Windows\Temp\27390r8798.txt"))
+{
+   New-Item -path "C:\Windows\Temp\" -name "27390r8798.txt" -type "file" -value "Dary"
+}
+else
+{
+  Add-Content -path "C:\Windows\Temp\27390r8798.txt" -value "`n Legen-Dary!"
+} 
